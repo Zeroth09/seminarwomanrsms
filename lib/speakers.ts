@@ -24,22 +24,31 @@ export const speakers = [
     },
     {
         id: 'hellen-citra',
-        name: 'Hellen Citra Dewi, M.Psi., Psikolog',
+        name: 'Hellen Citra Dewi, S.Psi., M.Psi., Psikolog',
         role: 'Psikolog Klinis',
-        institution: 'Rumah Sakit Mutiara Sukma',
+        institution: 'RSJ Mutiara Sukma',
         image: 'He', // Placeholder text for avatar
         color: 'from-secondary to-pink-600',
-        tags: ['M.Psi.', 'Psikolog'],
-        about: 'Hellen Citra Dewi adalah psikolog klinis yang berdedikasi dalam menangani berbagai masalah psikologis di Rumah Sakit Mutiara Sukma. Beliau memiliki fokus khusus pada kesehatan mental remaja dan dewasa muda.',
+        tags: ['S.Psi.', 'M.Psi.', 'Psikolog'],
+        about: 'Hellen Citra Dewi adalah Psikolog Klinis berpengalaman di RSJ Mutiara Sukma. Selain praktik klinis, beliau aktif sebagai Senior Trainer dan Program Coordinator untuk isu anak dan literasi digital, serta menjadi narasumber di berbagai forum nasional bersama Kemkominfo dan Google.org.',
         experience: [
-            'Psikolog Klinis di Rumah Sakit Mutiara Sukma',
-            'Konselor Psikologi di Berbagai Lembaga Pendidikan',
-            'Narasumber Seminar Kesehatan Mental'
+            'Psikolog Klinis RSJ Mutiara Sukma',
+            'Senior Trainer, Psikolog & Senior Program di SEJIWA Foundation (Isu Anak & Literasi Digital)',
+            'Narasumber di Indonesia Makin Cakap Digital bersama KOMINFO',
+            'Koordinator SEJIWA "Smart School Online" bersama Google.org di 12 Kota',
+            'Koordinator "Kilau Netizen Unggul" bersama KPPA di 5 Kota',
+            'Tim Penulis Buku "Aku Netizen Unggul Untuk Anak & Remaja"',
+            'Narasumber Berbagai Seminar & Workshop Bertemakan Psikologi & Mental Health'
         ],
         education: [
-            'Magister Psikologi Profesi (M.Psi) - Universitas Mercu Buana Yogyakarta',
-            'Sarjana Psikologi (S.Psi) - Universitas Mataram'
+            'S2 Profesi Psikolog Klinis Dewasa - Fakultas Psikologi Universitas Indonesia',
+            'S1 Fakultas Psikologi - Universitas Indonesia',
+            'Psychology Symposium "Logo Therapy & Cognitive Behaviour Therapy"',
+            'Art Therapy Workshop',
+            'Training Essential Marriage',
+            'Integrative Psychotherapy-Creating Case Formulation',
+            'Stabilitas Emosi & Self-Healing dengan Emotional Freedom Technic (EFT)'
         ],
-        expertise: ['Konseling Klinis', 'Psikotes', 'Terapi Kognitif Perilaku']
+        expertise: ['Psikologi Klinis Dewasa', 'Literasi Digital & Isu Anak', 'Art Therapy', 'CBT', 'Konseling Keluarga']
     }
 ]

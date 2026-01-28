@@ -1,7 +1,7 @@
 'use server'
 
 export async function sendWhatsappNotification(pendaftar: any) {
-    const ticketLink = `${process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3001'}/ticket/${pendaftar.id}`
+    const ticketLink = `https://seminarwomanrsms.vercel.app/ticket/${pendaftar.id}`
 
     // Format Phone Number (08 -> 62)
     let phone = pendaftar.no_telepon.replace(/\D/g, '')

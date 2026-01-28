@@ -45,7 +45,7 @@ export default function ScanPage() {
 
         try {
             // Regex update: Support /ticket/UUID or /check-in/UUID
-            const match = rawValue.match(/(??:ticket\/|check-in\/)([a-zA-Z0-9-]+)/) ||
+            const match = rawValue.match(/(?:ticket\/|check-in\/)([a-zA-Z0-9-]+)/) ||
                 rawValue.match(/^([a-f0-9-]{36})$/i) // Support UUID raw
 
             // Fallback: if scanning full URL that ends with UUID
@@ -192,8 +192,8 @@ export default function ScanPage() {
                 {/* Result Card */}
                 {status !== 'idle' && (
                     <div className={`w-full max-w-sm bg-white rounded-2xl p-6 shadow-xl text-slate-900 animate-slide-up transition-all ${status === 'success' ? 'border-l-8 border-green-500' :
-                            status === 'warning' ? 'border-l-8 border-yellow-500' :
-                                status === 'error' ? 'border-l-8 border-red-500' : ''
+                        status === 'warning' ? 'border-l-8 border-yellow-500' :
+                            status === 'error' ? 'border-l-8 border-red-500' : ''
                         }`}>
                         <div className="flex items-start gap-4">
                             <div className="shrink-0 pt-1">
@@ -204,8 +204,8 @@ export default function ScanPage() {
 
                             <div className="flex-1">
                                 <h3 className={`font-black text-xl mb-1 ${status === 'success' ? 'text-green-700' :
-                                        status === 'warning' ? 'text-yellow-700' :
-                                            'text-red-700'
+                                    status === 'warning' ? 'text-yellow-700' :
+                                        'text-red-700'
                                     }`}>
                                     {status === 'success' ? 'HADIR' :
                                         status === 'warning' ? 'SUDAH SCAN' :

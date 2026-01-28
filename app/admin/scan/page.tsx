@@ -132,10 +132,11 @@ export default function ScanPage() {
             return
         }
 
-        const confirm = window.confirm(`Check-in manual untuk ${p.nama_lengkap}?`)
-        if (!confirm) return
+        // REMOVED window.confirm due to mobile compatibility issues
+        // const confirm = window.confirm(`Check-in manual untuk ${p.nama_lengkap}?`)
+        // if (!confirm) return
 
-        // 1. Close Modal & Show Processing on Main Screen
+        // 1. Close Modal & Show Processing on Main Screen IMMEDIATELY
         setIsModalOpen(false)
         setStatus('processing')
         setMessage(`Memproses check-in manual untuk ${p.nama_lengkap}...`)

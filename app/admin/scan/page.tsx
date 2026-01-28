@@ -34,7 +34,7 @@ export default function ScanPage() {
 
             if (!match || !match[1]) {
                 setStatus('error')
-                setMessage('QR Code tidak valid! Pastikan scan QR Tiket Seminar.')
+                setMessage(`QR Code tidak valid! Terbaca: ${rawValue}`)
                 return
             }
 

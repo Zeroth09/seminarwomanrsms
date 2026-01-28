@@ -41,7 +41,15 @@ export default async function SpeakerPage(props: { params: Promise<{ id: string 
                         <div className="p-8 md:p-10 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
                             {/* Avatar */}
                             <div className={`w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br ${speaker.color} flex items-center justify-center text-white font-black text-4xl md:text-5xl shadow-lg border-4 border-white shrink-0`}>
-                                {speaker.image}
+                                {speaker.image.startsWith('/') ? (
+                                    <img
+                                        src={speaker.image}
+                                        alt={speaker.name}
+                                        className="w-full h-full object-cover"
+                                    />
+                                ) : (
+                                    speaker.image
+                                )}
                             </div>
 
                             {/* Basic Info */}

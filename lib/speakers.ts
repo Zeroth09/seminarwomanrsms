@@ -6,7 +6,7 @@ export const speakers = [
         name: 'Dr. dr. Anak Ayu Sri Wahyuni, Sp.KJ (K)',
         role: 'Psikiater',
         institution: 'RSUP Prof. dr. I.G.N.G Ngoerah',
-        image: 'Dr', // Placeholder text for avatar
+        image: '/dr-ayu.png', // Updated photo
         color: 'from-primary to-purple-700',
         tags: ['Sp.KJ (K)', 'Psikiater'],
         about: 'Dr. dr. Anak Ayu Sri Wahyuni adalah seorang psikiater konsultan yang berpengalaman di bidang kesehatan jiwa perempuan. Beliau aktif sebagai staf pengajar dan klinisi di RSUP Prof. dr. I.G.N.G Ngoerah Denpasar.',
@@ -27,7 +27,7 @@ export const speakers = [
         name: 'Hellen Citra Dewi, S.Psi., M.Psi., Psikolog',
         role: 'Psikolog Klinis',
         institution: 'RSJ Mutiara Sukma',
-        image: 'He', // Placeholder text for avatar
+        image: '/hellen-citra.png', // Updated photo
         color: 'from-secondary to-pink-600',
         tags: ['S.Psi.', 'M.Psi.', 'Psikolog'],
         about: 'Hellen Citra Dewi adalah Psikolog Klinis berpengalaman di RSJ Mutiara Sukma. Selain praktik klinis, beliau aktif sebagai Senior Trainer dan Program Coordinator untuk isu anak dan literasi digital, serta menjadi narasumber di berbagai forum nasional bersama Kemkominfo dan Google.org.',

@@ -166,9 +166,7 @@ export default function Home() {
               <div className="grid md:grid-cols-2 gap-5">
                 <Link href="/narasumber/dr-anak-ayu" className="group bg-white border border-slate-100 p-6 rounded-2xl shadow-sm hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all card-hover block">
                   <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-purple-700 flex items-center justify-center text-white shrink-0 font-bold text-xl shadow-md">
-                      Dr
-                    </div>
+                    <img src="/dr-ayu.png" alt="Dr. Ayu" className="w-14 h-14 rounded-full object-cover shadow-md border-2 border-white" />
                     <div>
                       <h4 className="font-bold text-slate-900 text-lg group-hover:text-primary transition-colors">Dr. dr. Anak Ayu Sri Wahyuni</h4>
                       <div className="inline-block px-2 py-0.5 bg-purple-50 text-primary text-[10px] font-bold rounded mt-1 mb-2">
@@ -186,9 +184,7 @@ export default function Home() {
 
                 <Link href="/narasumber/hellen-citra" className="group bg-white border border-slate-100 p-6 rounded-2xl shadow-sm hover:border-secondary/30 hover:shadow-lg hover:shadow-secondary/5 transition-all card-hover block">
                   <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-secondary to-pink-600 flex items-center justify-center text-white shrink-0 font-bold text-xl shadow-md">
-                      He
-                    </div>
+                    <img src="/hellen-citra.png" alt="Hellen Citra Dewi" className="w-14 h-14 rounded-full object-cover shadow-md border-2 border-white" />
                     <div>
                       <h4 className="font-bold text-slate-900 text-lg group-hover:text-secondary transition-colors">Hellen Citra Dewi</h4>
                       <div className="inline-block px-2 py-0.5 bg-pink-50 text-secondary text-[10px] font-bold rounded mt-1 mb-2">

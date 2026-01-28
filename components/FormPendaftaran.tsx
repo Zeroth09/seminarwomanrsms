@@ -34,12 +34,8 @@ export default function FormPendaftaran() {
                 .single()
 
             if (supabaseError) {
-                if (supabaseError.code === '23505') {
-                    setError('Email sudah terdaftar. Silakan gunakan email lain.')
-                } else {
-                    console.error('Supabase Error:', supabaseError)
-                    setError(`Gagal mendaftar: ${supabaseError.message}`)
-                }
+                console.error('Supabase Error:', supabaseError)
+                setError(`Gagal mendaftar: ${supabaseError.message}`)
                 setLoading(false)
                 return
             }

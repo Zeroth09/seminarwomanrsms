@@ -28,9 +28,8 @@ export default function ScanPage() {
         setMessage('Memproses data...')
 
         try {
-            // Extract ID from URL
-            // Format: https://domain.com/ticket/UUID
-            const match = rawValue.match(/\/ticket\/([a-zA-Z0-9-]+)/)
+            // Regex update: Support /ticket/UUID or /check-in/UUID
+            const match = rawValue.match(/(?:\/ticket\/|\/check-in\/)([a-zA-Z0-9-]+)/)
 
             if (!match || !match[1]) {
                 setStatus('error')

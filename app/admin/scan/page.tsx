@@ -135,17 +135,28 @@ export default function ScanPage() {
         const confirm = window.confirm(`Check-in manual untuk ${p.nama_lengkap}?`)
         if (!confirm) return
 
-        // Optimistic UI Update
-        const updatedList = manualList.map(item =>
-            item.id === p.id ? { ...item, hadir: true } : item
-        )
-        setManualList(updatedList)
+        // 1. Close Modal & Show Processing on Main Screen
+        setIsModalOpen(false)
+        setStatus('processing')
+        setMessage(`Memproses check-in manual untuk ${p.nama_lengkap}...`)
 
-        // Actual Call
+        // 2. Call API
         const res = await checkInParticipant(p.id)
-        if (!res.success) {
-            alert(res.message)
-            await fetchParticipants() // Revert/Refresh if fail
+
+        if (res.success) {
+            // 3. Show Success Card (Back to Scan view with Result)
+            setStatus('success')
+            setMessage('Berhasil Check-in Manual!')
+            setParticipant(res.participant)
+        } else {
+            // Error handling
+            setStatus('error')
+            setMessage(res.message)
+            // Jika error karena sudah check-in, set warning
+            if (res.message.includes('SUDAH')) {
+                setStatus('warning')
+                setParticipant(res.participant || p) // Fallback to p if participant null
+            }
         }
     }
 

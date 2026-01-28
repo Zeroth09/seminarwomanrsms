@@ -11,7 +11,8 @@ export async function sendWhatsappNotification(pendaftar: any) {
 
     const message = `Halo ${pendaftar.nama_lengkap},
 
-Terima kasih telah mendaftar di seminar *Woman's Wellbeing*.
+Terima kasih telah mendaftar di seminar *Woman's Wellbeing* : Issue Kesehatan Jiwa Perempuan
+di Era Digitalisasi.
 
 Berikut adalah *Tiket QR Code* Anda untuk akses masuk acara:
 ${ticketLink}
